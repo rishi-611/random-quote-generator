@@ -1,0 +1,94 @@
+#root {
+  background-color: rgb(57, 55, 126);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  transition: 2s ease;
+}
+
+.quote-box {
+  border-radius: 0.3rem;
+  box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  max-width: 540px;
+  min-height: 300px;
+  color: rgb(33, 31, 92);
+  transition: 0.2s ease;
+}
+
+.btn {
+  background-color: rgb(57, 55, 126);
+  color: #fff;
+  transition: 1s ease;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.author {
+  text-align: right;
+  transition: 0.2s ease;
+}
+
+.btn-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.quote-box {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(33, 31, 92);
+  transition: 0.4s ease;
+}
+
+.fa-twitter {
+  transform: scale(1.5);
+  position: relative;
+  top: 0.3rem;
+}
+
+.quote-mark {
+  transition: all 0.5s ease;
+}
+.fa-quote-left {
+  margin-right: 0.4rem;
+}
+
+.header {
+  transition: 0.4s ease;
+}
+
+.animate:hover {
+  /* 1s duration 0 delay 1 iteration */
+  animation: onHover 1s ease-out;
+}
+
+@keyframes onHover {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
